@@ -67,7 +67,8 @@ def generate_resume(file_path, json_data, author):
     running_row_index += 1
 
     table_data.append([
-        Paragraph(f"{"<a href='mailto:" + json_data["email"] + "'>" + json_data["email"] + "</a>"} | {json_data["mobileno"]} | {json_data["address"]}", CONTACT_PARAGRAPH_STYLE),
+       #Paragraph(f"{"<a href='mailto:" + json_data["email"] + "'>" + json_data["email"] + "</a>"} | {json_data["mobileno"]} | {json_data["address"]}", CONTACT_PARAGRAPH_STYLE),
+     Paragraph(f"{json_data['email']} | {json_data['mobileno']} | {json_data['address']}", CONTACT_PARAGRAPH_STYLE),
     ])
     table_styles.append(('BOTTOMPADDING', (0, running_row_index), (1, running_row_index), 1))
     running_row_index += 1
