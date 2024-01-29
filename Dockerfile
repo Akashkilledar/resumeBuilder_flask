@@ -7,7 +7,7 @@ RUN apt-get install python3-pip -y
 RUN pip install flask
 RUN pip install Pillow
 RUN pip install reportlab
-
+RUN pip install Flask_corse
 # Set the working directory to /app
 WORKDIR /app
 
