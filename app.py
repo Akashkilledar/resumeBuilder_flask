@@ -37,7 +37,8 @@ COMPANY_LOCATION_PARAGRAPH_STYLE = ParagraphStyle('company_location_paragraph', 
 
 #pip install Pillow==10.0.0
 #pip install reportlab==4.0.4
-
+if __name__ == "__main__":
+    app.run(debug=True, ssl_context='adhoc')
 def appendSectionTableStyle(table_styles, running_row_index):
     table_styles.append(('TOPPADDING', (0, running_row_index), (1, running_row_index), 5))
     table_styles.append(('BOTTOMPADDING', (0, running_row_index), (1, running_row_index), 5))
